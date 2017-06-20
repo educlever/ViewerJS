@@ -670,5 +670,7 @@ function Viewer(viewerPlugin, parameters) {
         }
     }
 
+    beforeInit && beforeInit();
     init();
+    afterInit && afterInit();
 }
